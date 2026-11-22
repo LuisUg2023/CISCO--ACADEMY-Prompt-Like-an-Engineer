@@ -1,0 +1,802 @@
+[00:11] If you're at work with your teammates
+and someone new joins the team,
+
+[00:14] it may take some time to figure out how to work with them
+
+[00:18] and also how they work with the other members of your team.
+
+[00:20] Similarly, when you incorporate AI into your workflow,
+
+[00:23] you also want to consider how the AI application fits in
+with your existing workflow and your existing team.
+
+[00:29] In this lesson, you'll look at how you can integrate
+AI into your workflows and your existing teams.
+
+[00:37] When you're including AI into your workflow, it helps to
+remind yourself to design a human-centered process.
+
+[00:43] And by that, I mean to think about how the workflow
+affects you and the rest of your teammates
+
+[00:48] who are either working with you on a task or
+receiving the end product of your work.
+
+[00:52] My team and I have reflected on what we learned
+when trying to include AI in our work
+
+[00:57] and we came up with some guiding principles that we believe
+can help support this human-centered approach.
+
+[01:03] One of these principles to keep in
+mind is to stay in the lead.
+
+[01:07] You are the decision maker who has the most context
+about what your team and your company needs.
+
+[01:13] So you decide which direction to take a task or project.
+
+[01:17] This also means that when you use AI to assist you,
+
+[01:20] you are ultimately responsible for the final result
+that you hand off to your other teammates.
+
+[01:25] Another guiding principle is to verify before trusting
+an AI model to perform ongoing repeated tasks.
+
+[01:32] This is also a reminder to only use AI to perform tasks
+when you can actually audit and verify the results.
+
+[01:38] Next, weigh the effort. Ask yourself,
+"Is the AI saving me time?"
+
+[01:43] If you spend more time fixing the AI software's
+mistakes than doing the work yourself,
+
+[01:48] you might be better off doing it yourself.
+
+[01:50] Another principle is adapt AI to you
+and not the other way around.
+
+[01:54] Use AI in a way that fits your work.
+
+[01:57] If you adapt your work process to make it easier
+to include an AI software in the workflow,
+
+[02:02] check if the process makes your work harder to do.
+
+[02:04] The AI should serve you and not the other way around.
+
+[02:08] And next, manage risks, including data
+privacy and software failures.
+
+[02:13] When you're in a professional workplace setting, the
+company is entrusting you with sensitive,
+
+[02:17] proprietary information, so you want to avoid leaking
+this information out into the public.
+
+[02:22] Another risk is to consider when the AI software that
+you rely on isn't working or is not available.
+
+[02:27] Be ready to step in and have a backup plan.
+
+[02:30] The first aspect of staying in the lead is that
+you steer the direction of a task
+
+[02:36] when working with AI. It's like you're
+the captain of a ship.
+
+[02:39] You not only have an idea of which direction
+you want to take the ship,
+
+[02:43] but you also have in mind alternate routes as you
+navigate and learn more about your options
+
+[02:48] or limitations. Each time you complete a step in a
+task, actively remind yourself to think for
+
+[02:53] yourself what's the next step you want to take. This
+is especially important
+
+[02:57] when you're having an ongoing
+conversation with a chatbot,
+
+[03:00] because most of these LLMs are trained
+to add a suggestion for what to do next
+
+[03:05] at the end of each response. If you passively follow
+the LLM's suggestion for each next step,
+
+[03:11] you may end up going down a path that you later
+realize isn't what you want it to do.
+
+[03:15] Using the analogy of navigating a ship, it's like drifting
+toward a deserted island, only to realize
+
+[03:21] you really wanted to take the ship to that other island
+that has a pot of gold.
+
+[03:25] It's helpful for you to think through
+what your original objectives are,
+
+[03:29] both before you start working on the task, but also
+
+[03:31] while you're actively working on it with a chatbot, so
+that you don't drift into a direction that you
+
+[03:36] didn't really want to go. I recommend closing your eyes
+or looking away from the LLMs suggestion for
+
+[03:42] what to do next so that you can think for yourself what
+your goals are and what you want to do next.
+
+[03:47] The second part of staying in the lead is that you
+are ultimately responsible for the output
+
+[03:53] that the AI is helping you to produce. The quality
+of what you deliver to your teammates
+
+[03:58] or to your customers will impact those teammates and
+customers, which means it will also impact
+
+[04:03] your professional reputation as well as your company's
+reputation.
+
+[04:07] When you use an LLM to help you with your work and it returns a response,
+
+[04:11] the temptation is to treat that response as a finished product.
+
+[04:15] Because LLM output is often grammatically
+polished and professionally formatted,
+
+[04:19] it's easy to skim it, assume it's accurate, and
+pass it on to a teammate or to a client.
+
+[04:25] However, this could easily turn out to be what
+some people are now referring to as
+
+[04:29] AI slop or work slop. Content that looks professional
+on the surface but which
+
+[04:34] contains errors, inaccuracies, or low-quality content
+beneath that polished, professional-looking surface.
+
+[04:40] Work slop occurs when we delegate tasks
+to an AI and hand off the results without
+
+[04:45] sufficient human review. Maybe you've experienced this
+firsthand when a fellow teammate handed off
+
+[04:50] some work to you. After reviewing it, you realize that
+your teammate probably used an LLM since some
+
+[04:56] things are not quite right and it doesn't meet your
+team's standards or isn't the quality of
+
+[05:00] work that you normally receive from that same person
+when they do it themselves.
+
+[05:04] And I also want to recognize that it's not that you or your teammates are being irresponsible or lazy when
+
+[05:09] this happens, but it's partly because there's a general
+expectation from company leadership
+
+[05:13] to use AI to find efficiencies and to produce more
+work faster.
+
+[05:18] On top of that, any first draft
+that you receive from an LLM
+
+[05:22] would likely look very polished
+in that there are no grammar issues
+
+[05:25] and the document may be formatted professionally. Normally,
+we only see the nice formatting and
+
+[05:30] professional wording in the final stages of a document
+or a piece of work after all the effort that went
+
+[05:35] into the content and ideas. So it becomes easy to
+mistake polished looking work with quality content.
+
+[05:41] So I'm not trying to scare you too much, but
+here are some risks that could result from
+
+[05:46] handing off AI generated work that doesn't actually
+meet your usual quality standards.
+
+[05:51] There's the cost. The cost of fixing errors later may
+be more expensive than reviewing them early on.
+
+[05:56] There could be legal issues. AI can generate
+inaccurate information that carries legal liabilities.
+
+[06:02] There's the reputational issue. There's a risk to
+your reputation or the company's reputation.
+
+[06:06] Your work is your professional brand and your company's
+public brand. If the quality suffers,
+
+[06:11] both reputations suffer with it.
+
+[06:13] Trust. One of the unfortunate
+results of work slop or AI slop is
+
+[06:17] that this leads to more mistrust among team members
+when they feel like they can't rely on
+
+[06:22] their coworkers to hand them work that is clearly thought
+out and that they end up having to fix themselves.
+
+[06:27] The next guiding principle is verify before trusting.
+Think of any AI generated output as
+
+[06:33] a draft that requires review and revision. You can
+think of your verification process as three
+
+[06:38] stages of review. The first is to align the deliverable
+with your high level goals and
+
+[06:43] expectations. This is an initial high level overview
+as you step back and look at the
+
+[06:48] deliverable and ask yourself, does this accomplish what
+I originally wanted to do? Does this fit in
+
+[06:52] with what my colleagues or customers are expecting? If the
+answer to these questions is no, this really
+
+[06:57] isn't going in the right direction. You can think about
+how to clarify your goals and give this
+
+[07:01] feedback to the LLM. Next, at a more detailed level,
+you can inspect the output. This is where
+
+[07:07] you look closely and ask, are these statements correct?
+And can these statements be backed up
+
+[07:11] with evidence? LLMs can confidently present inaccuracies
+or hallucinations as if they're true.
+
+[07:17] You'll want to look at the LLMs output with some caution
+and skepticism. Next, you'll refine. This
+
+[07:23] is where you add your revisions based on your experience
+and knowledge about your team, your
+
+[07:28] company, the job role you're in, and your customers.
+Adjust the tone, improve the structure, and add
+
+[07:34] necessary nuance and information to ensure the work
+reflects your team's professional standards.
+
+[07:39] Think of yourself as the editor of a newspaper. The
+final version of the deliverable should have
+
+[07:44] the ideas and the quality that you would be willing
+to say is your best work. If you find
+
+[07:48] it difficult to align, inspect, and refine the output
+of an LLM, be careful about delegating
+
+[07:54] the task to AI. If you can't verify the quality of the
+output, then you won't be able to guarantee
+
+[07:59] that the output from the LLM is good or not. So,
+only delegate tasks to AI if you can verify
+
+[08:05] the output's accuracy and alignment with your goals.
+
+[08:08] The next guiding principle is, weigh the effort
+of using AI in your workflow.
+
+[08:13] If you find yourself constantly redirecting, fixing
+mistakes, and re-running prompts,
+
+[08:18] you may be spending more time managing the
+LLM than doing the actual work.
+
+[08:23] If the align, verify, and refine cycle becomes a
+frustrating process where you're constantly
+
+[08:28] giving feedback to the LLM or AI-enabled application,
+or finding unexpected errors
+
+[08:33] that keep reappearing, you may have reached
+a point of diminishing returns.
+
+[08:37] You can ask yourself if this tool is actually saving
+you time, or is it just adding to your
+
+[08:42] workload and adding more uncertainty or risk of inserting
+something that you will have to identify
+
+[08:47] and fix. For some tasks, the most efficient path is
+still to do it yourself. When you weigh the
+
+[08:53] effort between delegating to AI or doing the task yourself,
+you can think about the effort it takes
+
+[08:59] to do the task yourself and also consider the effort
+it takes to verify and fix the output when
+
+[09:04] you delegate the task to an AI model. In terms of tasks'
+difficulty, tasks range from ones that
+
+[09:09] are low effort to do yourself to high effort to do
+yourself. And you'll also want to consider
+
+[09:14] how much effort it takes to verify or fix the
+deliverable when the task is done by AI.
+
+[09:20] When it's both low effort to do the task yourself and
+also low effort to verify and fix, you can
+
+[09:25] more safely delegate this task to AI. But if it takes
+less time to do it yourself, you can also
+
+[09:31] consider doing it yourself. As one example, you could
+prompt an LLM to help you convert time zones
+
+[09:36] for meetings with co-workers who live in other parts
+of the world. But if you are meeting with
+
+[09:40] the same co-workers and do the same time zone conversions
+each time, then your brain could
+
+[09:44] probably figure out how many hours to add or subtract
+faster than it would take for you to
+
+[09:49] prompt a language model to give you that answer. Next,
+if a task takes high effort for you to do
+
+[09:54] yourself, but relatively low effort for you to verify
+or fix something that you delegated to an
+
+[10:00] AI, then this task is a good candidate to delegate
+to an AI. And you may be wondering,
+
+[10:06] when would that ever be the case where I can't do the
+task myself, but it's easy for me to verify
+
+[10:11] that the LLM did it correctly. One common example you
+may experience is that you may need to figure
+
+[10:16] out how to use some software to help you perform some
+tasks. Normally, it would take you some time
+
+[10:21] to read an instruction manual or watch some tutorial
+videos to learn how to do this. But you
+
+[10:25] could ask the chatbot to give you step by step instructions
+on how to do this task. And you could
+
+[10:30] verify whether these instructions actually work by
+following these instructions step by step. Even
+
+[10:36] if you don't know how to come up with these step by step
+instructions yourself, you can notice when
+
+[10:41] some steps are impossible to do. And even if the steps
+are possible, you can check if these steps
+
+[10:46] actually do what you originally wanted to do. Then there
+are tasks that both take a lot of effort for
+
+[10:51] you to do, and also a lot of effort for you to be able
+to verify and fix. This can be where you're
+
+[10:56] trying to perform a task that is beyond your existing
+training or expertise, and it's more
+
+[11:01] open ended than following a set of step by step instructions. Since the task is outside of your
+
+[11:07] existing expertise, it also means that you would need
+to do a lot of learning to have the ability
+
+[11:11] to verify the results or to fix them if there are
+issues. The danger here is that if you can't
+
+[11:16] easily verify or fix the results, it becomes very tempting
+to just hand off the direct AI output to
+
+[11:21] a coworker or customer, even if it's not good. So one
+of the main recommendations that my team and
+
+[11:27] I would really like to reemphasize to you is to avoid
+delegating a task to AI if you cannot verify
+
+[11:33] the quality or correctness of the resulting output.
+Finally, there may be situations where a task is
+
+[11:39] something you could do easily, but the AI output takes
+a lot of effort to fix. Normally, if it's a
+
+[11:44] task that you could do yourself, you would be able to
+verify if the AI's output is correct or not,
+
+[11:49] but it may take you a lot of effort to fix the issues
+yourself compared to if you did the task
+
+[11:54] yourself. From my team's experience, one example is when
+we used an AI enabled software to directly
+
+[12:01] edit our presentation slides, in particular, when we
+used it to create or edit visual objects like
+
+[12:06] rectangles, circles, and lines. The AI powered software
+sometimes created so many objects on
+
+[12:12] the slide that it took a lot of effort to adjust them
+to fit an existing style preference. Or in
+
+[12:17] my case, the LLM accidentally deleted a slide that
+I was actively working on and couldn't undo
+
+[12:22] that deletion. So this is an example where, at least
+for now, our team still finds it easier
+
+[12:27] and more reliable to create these presentation
+slides ourselves.
+
+[12:31] Another guiding principle is to adapt AI to you.
+
+[12:34] Just because you can delegate a task to AI
+
+[12:37] doesn't always mean it's the best option for you.
+
+[12:40] It helps to remind yourself to use AI as a tool
+
+[12:43] if it fits your goals.
+
+[12:44] So what are those goals?
+
+[12:45] The more obvious one is to complete
+a required task at work.
+
+[12:50] But beyond just getting a task done,
+
+[12:52] sometimes doing a task yourself helps you
+
+[12:54] with your personal and professional growth.
+
+[12:56] Here's an example.
+
+[12:58] You have a task to write a weekly progress report
+
+[13:01] to send to your manager at the end of each week.
+
+[13:03] You might find a way to use an LLM
+
+[13:06] to write this weekly progress report for you.
+
+[13:08] And this could help you with your goal
+
+[13:10] of completing the task.
+
+[13:11] You could find a way to gather all your meeting notes,
+
+[13:13] meeting transcripts,
+
+[13:14] and all your other work documents from the week.
+
+[13:16] And ask an LLM to write your weekly progress report
+
+[13:19] to send to your manager.
+
+[13:20] But even if you gave the LLM all your work documents
+
+[13:23] to ask it to write your weekly progress report,
+
+[13:25] much of the relevant information about what you did
+
+[13:28] isn't actually in those documents.
+
+[13:29] They're still only in your head.
+
+[13:31] And now let's also think about that other goal,
+
+[13:33] beyond completing the task,
+
+[13:34] which is your personal growth.
+
+[13:36] If you spend a few minutes to do this task yourself,
+
+[13:39] you will use that time to reflect,
+
+[13:41] to clarify, and to plan.
+
+[13:43] When you spend some time to reflect
+
+[13:45] on what you intended to do and what you actually did,
+
+[13:48] this helps you to clarify
+
+[13:49] where most of your energy and effort is being allocated
+
+[13:52] and also helps you to clarify
+
+[13:53] where you're making more progress or less progress,
+
+[13:56] or where you're encountering obstacles
+
+[13:58] to achieving those goals.
+
+[14:00] This can help you to plan what you want to focus on
+
+[14:02] for the next week.
+
+[14:04] So doing some tasks yourself,
+
+[14:06] go beyond just completing a required task,
+
+[14:08] but can also support your personal and professional growth.
+
+[14:11] In those cases, consider doing the task yourself,
+
+[14:13] or at the least, giving yourself the time to think
+
+[14:16] and reflect on that task,
+
+[14:17] even if you decide to use AI to assist you.
+
+[14:21] Another aspect of the recommendation to adapt AI to you
+
+[14:25] is to optimize the workflow to make it easier for you.
+
+[14:28] This also means to be careful
+
+[14:30] about optimizing the workflow
+
+[14:32] in a way that makes it easier to incorporate AI
+
+[14:34] at the expense of making the workflow harder for you.
+
+[14:38] What sometimes has happened when my team and I
+
+[14:40] have tried to incorporate AI into an existing workflow
+
+[14:43] is that we end up over-optimizing
+
+[14:45] to make it easier for the LLM,
+
+[14:47] to the point that the process was no longer optimal
+
+[14:49] for us, the humans.
+
+[14:50] Usually what happens is that we try to make it easier
+
+[14:53] to get information into and out of a chatbot,
+
+[14:55] even when the workflow no longer is optimal for us,
+
+[14:58] when we want to directly edit and refine that information.
+
+[15:01] As a concrete example,
+
+[15:03] you might try to edit an entire document
+
+[15:05] directly within a chatbot's chat conversation.
+
+[15:08] You provide a prompt, you get an output,
+
+[15:10] and then you send a follow-up prompt
+
+[15:12] to edit specific sections.
+
+[15:13] However, you're likely to notice the downside.
+
+[15:16] Each time you ask the AI to change one thing,
+
+[15:18] it may often inadvertently alter
+other parts of the document
+
+[15:21] that you want it to keep.
+
+[15:22] By staying in the chatbot,
+
+[15:23] you're forcing your work to fit
+
+[15:25] the AI application's environment
+
+[15:27] rather than using the best working environment for you.
+
+[15:30] Some of these chatbots have a word processor
+
+[15:32] built into the application,
+
+[15:34] which lets both you and the LLM edit the document.
+
+[15:37] So that's an improvement.
+
+[15:38] But even with these built-in word processors,
+
+[15:40] I've still noticed that my manual edits
+
+[15:42] would get replaced the next time I prompted the LLM
+
+[15:46] to make some edits elsewhere in the document.
+
+[15:48] To ensure that the workflow still works for you,
+
+[15:51] in this case, consider using a chatbot
+to learn or brainstorm
+
+[15:54] and perhaps create an initial draft.
+
+[15:57] Then move your work over to your preferred word processor
+
+[16:00] or specialized tool.
+
+[16:01] So that gives you access to the features
+
+[16:04] of your preferred tools and also gives you more control
+
+[16:06] as you refine that deliverable.
+
+[16:08] Just as an additional example,
+
+[16:10] my team and I tried to change our workflow
+
+[16:13] for tasks that normally involve both visuals and text
+
+[16:16] to make it easier to get feedback and ideas from an LLM.
+
+[16:19] So we switched to working purely in text,
+
+[16:22] which meant that instead of drawing sketches,
+
+[16:24] we tried to describe the sketches in words.
+
+[16:26] We initially thought this was pretty great
+
+[16:28] because the purely text nature of the work
+
+[16:31] made it easy to feed to an LLM
+
+[16:33] and to get its output as pure text.
+
+[16:35] But we later realized that trying to perform
+
+[16:37] a highly visual task by only describing it in words
+
+[16:40] makes it difficult to create those visuals.
+
+[16:42] And so this gave me this broader realization
+
+[16:45] that we were making it more difficult for us to do our work
+
+[16:47] because we were trying to optimize
+
+[16:49] to make it easier to incorporate the LLM.
+
+[16:51] And one more guiding principle is to manage risks
+
+[16:55] and that is to prioritize data privacy
+
+[16:57] and to plan for failure.
+
+[16:59] When you include AI in your workflow,
+
+[17:01] you are the gatekeeper responsible
+
+[17:03] for prioritizing data privacy
+
+[17:06] and following security constraints
+
+[17:08] as set by the company you work for.
+
+[17:10] Companies may restrict certain AI tools
+
+[17:12] like publicly available chatbots
+
+[17:14] to protect confidential data
+
+[17:15] while approving vetted internal tools.
+
+[17:18] It's tempting to use popular public
+chatbots for work tasks,
+
+[17:21] but there is a significant risk.
+
+[17:23] When you use free public facing services,
+
+[17:26] your prompts, documents, and data are often used
+
+[17:29] to train the provider's models.
+
+[17:30] Even if you go to these chatbot providers
+
+[17:33] and choose the option to opt out of having your data used
+
+[17:36] for model training, public tools rarely meet
+
+[17:38] the rigorous security and privacy standards
+
+[17:41] required for confidential company work.
+
+[17:43] Many organizations provide vetted internal tools.
+
+[17:46] These are designed to keep your data secure
+
+[17:49] and within your company's own environment.
+
+[17:51] We'll also explore in this course
+
+[17:52] locally hosted models that keep your data
+
+[17:54] within your own secure environment on your own computer.
+
+[17:58] And as another part of managing risk,
+
+[18:00] it's always good to have a backup plan ready
+
+[18:02] in case your AI tool is not available to use.
+
+[18:05] Realistically, there is such a high demand
+
+[18:07] for these cloud hosted large language models
+
+[18:09] that there will be times when you try to use
+
+[18:12] a chatbot service or AI enabled service
+
+[18:14] and it's actually just not available.
+
+[18:16] I bring this up because I experienced this
+
+[18:18] when a particular tool I was using
+
+[18:19] was the only one available through one specific company.
+
+[18:22] And when their services were down,
+
+[18:24] I was no longer able to use that AI service
+
+[18:26] and I didn't have a backup option
+
+[18:27] other than to do the work myself.
+
+[18:29] So I just wanna caution that as you include LLMs
+
+[18:32] or other AI enabled software in your workflow,
+
+[18:35] that you may also wanna make sure
+
+[18:37] that your process can still work
+
+[18:38] even when the AI application that you rely on
+
+[18:41] is not available.
+
+[18:42] So to summarize, when you include AI
+
+[18:44] in a new or existing task or process,
+
+[18:47] try to design a human-centered process
+
+[18:49] that works for you and the people who are working with you.
+
+[18:52] To help you with that human centered focus,
+
+[18:54] here are the guiding principles to keep in mind.
+
+[18:56] Stay in the lead, verify before trusting,
+
+[19:00] weigh the effort of doing versus delegating,
+
+[19:03] adapt AI to you and manage risks.
+
+[19:08] In the next video, you'll continue that director mindset
+
+[19:11] and look at the software and human coworkers
+
+[19:13] as a team that work together on your projects.
+
+[19:16] You'll also get some guidance on
+how to decompose your tasks
+
+[19:19] to distribute the work.
+
+[19:20] See you in the next video.
