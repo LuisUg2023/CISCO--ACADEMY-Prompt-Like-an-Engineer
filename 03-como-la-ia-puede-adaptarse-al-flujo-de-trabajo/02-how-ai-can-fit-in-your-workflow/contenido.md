@@ -213,3 +213,309 @@ Este ejemplo muestra que diferentes recursos pueden participar en un mismo proce
 ---
 
 **Fin de la lección 1.2.2.**
+
+
+# 12. Laboratorio práctico: trabajar con múltiples LLM en la nube
+
+<badge>Práctica guiada</badge>
+
+## 12.1. Objetivo del laboratorio
+
+Utilizar tres modelos de lenguaje alojados en la nube (*Cloud LLM*) para resolver una misma tarea, comparar sus resultados, identificar diferencias y limitaciones, aplicar evaluación cruzada y elaborar una respuesta final supervisada por una persona.
+
+Al finalizar, el estudiante podrá:
+
+- Ejecutar el mismo prompt en diferentes plataformas de IA.
+- Mantener constantes las instrucciones para que la comparación sea más justa.
+- Evaluar precisión, cobertura, claridad, razonamiento verificable y cumplimiento del formato.
+- Identificar afirmaciones no sustentadas y posibles alucinaciones.
+- Utilizar un modelo para revisar la respuesta de otro sin delegar la decisión final.
+- Combinar los resultados útiles en una entrega final.
+
+## 12.2. Escenario
+
+Una organización desea realizar una primera revisión de un conjunto pequeño de registros de autenticación y actividad de archivos. El objetivo es preparar un resumen preliminar para el equipo de soporte y seguridad.
+
+Los registros siguientes son **datos sintéticos creados exclusivamente para esta práctica**. No representan un incidente real.
+
+| Hora | Evento | Usuario | Dirección IP de origen | Detalle |
+|---|---|---|---|---|
+| 09:02 | Inicio de sesión fallido (5 intentos) | analista1 | 203.0.113.24 | Credenciales rechazadas |
+| 09:05 | Inicio de sesión exitoso | analista1 | 203.0.113.24 | Autenticación aceptada |
+| 09:07 | Acceso a archivo | analista1 | 203.0.113.24 | inventario.csv |
+| 09:08 | Acceso a archivo | analista1 | 203.0.113.24 | usuarios.csv |
+| 09:10 | Cierre de sesión | analista1 | 203.0.113.24 | Sesión finalizada |
+
+**Limitación importante:** estos registros no indican si la dirección IP pertenece a una persona autorizada, si el dispositivo es conocido, si los archivos fueron descargados, si el acceso estaba permitido o si hubo exposición de información. Los modelos deben reconocer estas incertidumbres y no inventar conclusiones.
+
+## 12.3. Herramientas necesarias
+
+Utiliza tres servicios de LLM Cloud a los que tengas acceso mediante navegador. Como ejemplos puedes seleccionar:
+
+- ChatGPT.
+- Google Gemini.
+- Anthropic Claude.
+- Microsoft Copilot, como alternativa si alguno de los anteriores no está disponible.
+
+No es obligatorio utilizar exactamente esas tres plataformas. Registra el nombre del servicio y, si la interfaz lo muestra, el modelo seleccionado. Los nombres y versiones disponibles pueden cambiar.
+
+**Requisitos:**
+
+- Navegador web y conexión a Internet.
+- Acceso a tres servicios de IA en la nube.
+- Un documento o una hoja de cálculo para registrar los resultados.
+- Los datos sintéticos incluidos en esta práctica.
+
+No se requiere instalar software, escribir código ni configurar claves API. Si una plataforma no está disponible, utiliza otra y anota el cambio.
+
+## 12.4. Reglas de ejecución
+
+Para que la comparación sea razonable:
+
+1. Utiliza el mismo texto de prompt y los mismos registros en los tres servicios.
+2. Inicia una conversación nueva en cada plataforma para evitar que el historial anterior altere el contexto.
+3. No añadas instrucciones adicionales a un solo modelo durante la primera ronda.
+4. Conserva las respuestas completas.
+5. Registra el nombre del servicio y el modelo visible.
+6. No introduzcas información personal, credenciales, registros reales ni datos confidenciales.
+7. No interpretes la respuesta de un LLM como evidencia de que ocurrió un incidente.
+
+## 12.5. Fase 1: ejecutar el mismo prompt en tres modelos
+
+Abre el primer servicio de IA, inicia una conversación nueva y pega el siguiente prompt. Repite exactamente el mismo procedimiento en los otros dos servicios.
+
+### Prompt principal
+
+```text
+Actúa como analista de seguridad informática de nivel inicial.
+Debes realizar una revisión preliminar de los siguientes registros
+sintéticos de autenticación y acceso a archivos.
+
+REGISTROS:
+09:02 - 5 intentos fallidos de inicio de sesión.
+Usuario: analista1.
+IP de origen: 203.0.113.24.
+
+09:05 - Inicio de sesión exitoso.
+Usuario: analista1.
+IP de origen: 203.0.113.24.
+
+09:07 - Acceso al archivo inventario.csv.
+Usuario: analista1.
+IP de origen: 203.0.113.24.
+
+09:08 - Acceso al archivo usuarios.csv.
+Usuario: analista1.
+IP de origen: 203.0.113.24.
+
+09:10 - Cierre de sesión.
+Usuario: analista1.
+IP de origen: 203.0.113.24.
+
+TAREA:
+Prepara un análisis preliminar para un equipo de soporte y seguridad.
+
+FORMATO OBLIGATORIO:
+1. Resumen ejecutivo de máximo 100 palabras.
+2. Línea de tiempo de los eventos.
+3. Indicadores que merecen revisión.
+4. Hechos observados directamente en los registros.
+5. Hipótesis posibles, claramente identificadas como hipótesis.
+6. Información adicional necesaria para confirmar o descartar las hipótesis.
+7. Cinco acciones recomendadas, ordenadas por prioridad.
+
+RESTRICCIONES:
+- No inventes eventos, usuarios, ubicaciones ni evidencias.
+- No afirmes que hubo una intrusión o una filtración de datos sin pruebas.
+- No supongas que acceder a un archivo significa descargarlo.
+- Diferencia los hechos de las hipótesis.
+- Si la información no permite llegar a una conclusión, indícalo.
+- Utiliza lenguaje técnico claro y comprensible.
+- Respeta exactamente los apartados solicitados.
+```
+
+Guarda las tres respuestas como **Respuesta A**, **Respuesta B** y **Respuesta C**. No selecciones todavía una ganadora.
+
+## 12.6. Fase 2: comparación de resultados
+
+Compara las respuestas utilizando esta matriz. Asigna una puntuación de 1 a 5 en cada criterio:
+
+| Criterio | 1 punto | 3 puntos | 5 puntos |
+|---|---|---|---|
+| Fidelidad a los registros | Inventa o altera datos | Presenta alguna imprecisión | Respeta todos los registros |
+| Separación entre hechos e hipótesis | Los mezcla | Los separa parcialmente | Los distingue claramente |
+| Reconocimiento de incertidumbre | Afirma conclusiones sin evidencia | Reconoce algunas limitaciones | Expone claramente lo que no se sabe |
+| Recomendaciones | Son vagas o desproporcionadas | Son parcialmente útiles | Son concretas, proporcionadas y priorizadas |
+| Cumplimiento del formato | Omite varios apartados | Cumple parcialmente | Incluye todos los apartados |
+| Claridad técnica | Es confusa | Es comprensible con ajustes | Es clara y precisa |
+
+**Puntuación máxima:** 30 puntos por respuesta.
+
+La puntuación no debe asignarse por el estilo más convincente o por la longitud de la respuesta. Debe basarse en el cumplimiento de los criterios y en la evidencia disponible.
+
+## 12.7. Fase 3: evaluación cruzada entre modelos
+
+Ahora utiliza los modelos para revisar respuestas producidas por otros servicios.
+
+En el segundo modelo, pega la Respuesta A junto con este prompt:
+
+```text
+Actúa como revisor independiente de un análisis de seguridad.
+Evalúa la respuesta que aparece a continuación utilizando
+exclusivamente los registros originales de esta práctica.
+
+Comprueba:
+1. Si se inventaron datos o eventos.
+2. Si se confundieron hechos con hipótesis.
+3. Si se afirmaron intrusiones, descargas o filtraciones sin evidencia.
+4. Si se identificaron las limitaciones de los registros.
+5. Si las acciones recomendadas son proporcionadas.
+
+Devuelve una tabla con las columnas:
+- Observación.
+- Fragmento o afirmación revisada.
+- Problema detectado.
+- Justificación.
+- Corrección recomendada.
+
+No reescribas todo el análisis.
+No inventes evidencia.
+Si no encuentras un error, indícalo expresamente.
+
+RESPUESTA QUE DEBES REVISAR:
+[PEGAR AQUÍ LA RESPUESTA A]
+```
+
+Repite el procedimiento con las otras respuestas, procurando que cada una sea revisada por un servicio diferente del que la generó. Por ejemplo:
+
+| Respuesta original | Modelo que la generó | Modelo revisor |
+|---|---|---|
+| A | ChatGPT | Gemini |
+| B | Gemini | Claude |
+| C | Claude | ChatGPT |
+
+Si utilizas otros servicios, conserva la regla: el revisor no debe ser el mismo modelo que produjo la respuesta evaluada, siempre que sea posible.
+
+La evaluación cruzada sirve para encontrar errores y diferencias, pero tampoco garantiza que el revisor tenga razón. Comprueba cada observación contra los registros originales.
+
+## 12.8. Fase 4: mejorar una respuesta mediante retroalimentación
+
+Selecciona la respuesta que haya obtenido la mejor puntuación inicial. Incorpora únicamente las correcciones que puedas justificar con los datos.
+
+Envía al modelo que produjo esa respuesta el siguiente prompt:
+
+```text
+Debes revisar tu análisis anterior utilizando la siguiente
+retroalimentación de un revisor independiente.
+
+RETROALIMENTACIÓN:
+[PEGAR AQUÍ LAS OBSERVACIONES QUE HAYAS VERIFICADO]
+
+INSTRUCCIONES:
+- Corrige los errores confirmados.
+- Conserva las afirmaciones que sí estén sustentadas.
+- No incorpores observaciones que contradigan los registros.
+- Mantén separados los hechos, las hipótesis y los datos faltantes.
+- No afirmes que hubo intrusión, descarga o filtración sin evidencia.
+- Conserva los siete apartados del formato original.
+
+Entrega una versión revisada y una lista breve de los cambios realizados.
+```
+
+Compara la versión inicial y la revisada. Comprueba si las modificaciones realmente mejoraron la calidad o si introdujeron nuevos errores.
+
+## 12.9. Fase 5: construir una respuesta final
+
+Como responsable del ejercicio, integra los elementos más sólidos de las respuestas y de las revisiones. Puedes utilizar un cuarto modelo o cualquiera de los tres servicios para preparar un borrador de síntesis.
+
+Prompt de síntesis:
+
+```text
+Actúa como asistente de redacción técnica.
+A continuación recibirás tres análisis y sus observaciones de revisión.
+
+Tu tarea es preparar un único informe preliminar que:
+- Utilice solamente hechos presentes en los registros.
+- Distinga hechos, hipótesis y aspectos pendientes de verificar.
+- Elimine afirmaciones no sustentadas.
+- Incluya recomendaciones proporcionales.
+- Mantenga una estructura clara para el equipo de soporte y seguridad.
+
+No decidas cuál modelo tiene razón por su reputación o estilo.
+No inventes datos para completar vacíos.
+Si existen diferencias no resueltas, señálalas.
+
+ANÁLISIS A:
+[PEGAR RESPUESTA A]
+
+ANÁLISIS B:
+[PEGAR RESPUESTA B]
+
+ANÁLISIS C:
+[PEGAR RESPUESTA C]
+
+OBSERVACIONES VERIFICADAS:
+[PEGAR LAS OBSERVACIONES CONFIRMADAS]
+```
+
+La síntesis generada es un borrador. La persona que realiza el laboratorio debe revisar el informe final y decidir qué afirmaciones acepta.
+
+## 12.10. Registro de resultados
+
+Completa la siguiente tabla durante la práctica:
+
+| Campo | Modelo A | Modelo B | Modelo C |
+|---|---|---|---|
+| Plataforma utilizada | | | |
+| Nombre del modelo visible | | | |
+| ¿Cumplió el formato? | | | |
+| ¿Inventó algún dato? | | | |
+| ¿Separó hechos e hipótesis? | | | |
+| ¿Reconoció limitaciones? | | | |
+| Puntuación sobre 30 | | | |
+| Principal fortaleza | | | |
+| Principal debilidad | | | |
+
+Registra también:
+
+- ¿Qué respuesta fue más fiel a los registros?
+- ¿Qué modelo identificó mejor la información faltante?
+- ¿Qué errores detectó la evaluación cruzada?
+- ¿Qué correcciones mejoraron el resultado?
+- ¿Hubo alguna recomendación que parecía convincente, pero no estaba sustentada?
+- ¿Qué partes del informe final tuviste que corregir manualmente?
+
+## 12.11. Criterios de evaluación del laboratorio
+
+| Actividad | Puntaje |
+|---|---:|
+| Ejecución del mismo prompt en tres LLM Cloud | 15 |
+| Conservación y registro de las respuestas | 10 |
+| Comparación con la matriz de evaluación | 20 |
+| Evaluación cruzada entre modelos | 20 |
+| Revisión y mejora mediante retroalimentación | 15 |
+| Informe final y reflexión personal | 20 |
+| **Total** | **100** |
+
+## 12.12. Resultado esperado
+
+Al terminar, el estudiante tendrá:
+
+1. Tres respuestas obtenidas de distintos LLM Cloud.
+2. Una matriz comparativa con puntuaciones justificadas.
+3. Observaciones de evaluación cruzada.
+4. Una versión revisada de uno de los análisis.
+5. Un informe final integrado y revisado por una persona.
+6. Una conclusión sobre las fortalezas y limitaciones observadas en cada servicio.
+
+## 12.13. Conclusión del laboratorio
+
+Utilizar múltiples LLM Cloud no significa enviar una pregunta a varios modelos y elegir automáticamente la respuesta más extensa o popular. El valor está en comparar resultados bajo condiciones similares, detectar errores, solicitar revisiones independientes y combinar las contribuciones que puedan justificarse.
+
+Cada modelo puede aportar una perspectiva diferente, pero también puede equivocarse. La evaluación cruzada reduce algunos riesgos, no los elimina. La verificación contra los datos originales y la aprobación humana siguen siendo indispensables.
+
+**Principio fundamental:** los modelos generan y revisan propuestas; la persona verifica la evidencia y toma la decisión final.
+
+---
+
+**Fin del laboratorio práctico de múltiples LLM Cloud.**
